@@ -6,17 +6,20 @@ from rasa_sdk import Action
 from rasa_sdk.events import SlotSet
 import requests
 
+
 class ActionWeather(Action):
+    API_KEY = "4375fd6915057370afea8398ddc7f7c2"
+    PARAM = {'access_key': '', 'query': ''}
+    URL = "http://api.weatherstack.com/current"
+
     def name(self):
         return 'action_weather'
 
-    def run(self, dispatcher, tracker):
-        url = "http://api.weatherstack.com/current"
-        access_key = "4375fd6915057370afea8398ddc7f7c2"
+    def run(self, dispatcher, tracker, domain):
         loc = tracker.get_slot('location')
-        params = {'access_key': access_key, 'query': loc}
-
-        r = requests.get(url=url, params=params)
+        self.PARAM['access_key'] = self.API_KEY
+        self.PARAM['query'] = loc
+        r = requests.get(url=self.URL, params=self.PARAM)
         data = r.json()
 
         city = data['location']['name']
