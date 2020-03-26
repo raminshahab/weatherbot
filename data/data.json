@@ -12,7 +12,7 @@
         "entities": []
       },
       {
-        "text": "What's the weather in Berlin at the moment?",
+        "text": "What's the weather in San Francisco at the moment?",
         "intent": "inform",
         "entities": [
           {
