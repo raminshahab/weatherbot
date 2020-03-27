@@ -7,8 +7,13 @@
         "entities": []
       },
       {
-        "text": "goodbye",
-        "intent": "goodbye",
+        "text": "Goodbye",
+        "intent": "Goodbye",
+        "entities": []
+      },
+      {
+        "text": "Salutations",
+        "intent": "greet",
         "entities": []
       },
       {
@@ -17,13 +22,13 @@
         "entities": [
           {
             "start": 22,
-            "end": 28,
-            "value": "Berlin",
+            "end": 35,
+            "value": "San Francisco",
             "entity": "location"
           }
         ]
       },
-	  {
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []

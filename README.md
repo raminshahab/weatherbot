@@ -10,12 +10,13 @@ Activate your venv environment
  
 ```$ source ./venv/bin/activate```
 
-Dependencies for Spacy 
+Dependencies
 
 ``` 
-$ pip install rasa[spacy]
-$ python -m spacy download en_core_web_md
-$ python -m spacy link en_core_web_md en
+$ pip3 install rasa[spacy]
+$ python3 -m spacy download en_core_web_md
+$ python3 -m spacy link en_core_web_md en
+$ pip3 install -r requirements
 ```
 
 Now you've installed the Rasa Framework and Spacy language 
@@ -32,6 +33,17 @@ Steps when creating and training your AI assistant
 6. Talk to Your Assistant
 ```
 
+``bash
+# Start Actions Server 
+python -m rasa_sdk.endpoint --actions actions
+``
+
+# Install Interactive NLU Trainer & launch trainer 
+```bash
+ npm i -g rasa-nlu-trainer
+ rasa-nlu-trainer
+```
+
 # Weather Client 
 ```bash
 You will need an API Key from https://weatherstack.com/
@@ -42,4 +54,19 @@ afterwards just add your API key to the actions.py file
 http://api.weatherstack.com/current
     ? access_key = YOUR_ACCESS_KEY
     & query = New York
+```
+
+# Request Predictions from NLU Server 
+```bash
+curl localhost:5005/model/parse -d '{"text":"hello"}'
+```
+
+# Install Rasa NLU 
+```bash
+pip3 install rasa_nlu
+```
+
+# Install RASA X 
+```bash
+pip install rasa-x --extra-index-url https://pypi.rasa.com/simpleras
 ```

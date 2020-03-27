@@ -6,20 +6,24 @@
         "text": "Hello"
       },
       {
-        "intent": "goodbye",
-        "text": "goodbye"
+        "intent": "Goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "greet",
+        "text": "Salutations"
       },
       {
         "intent": "inform",
         "entities": [
           {
             "start": 22,
-            "end": 28,
-            "value": "Berlin",
+            "end": 35,
+            "value": "San Francisco",
             "entity": "location"
           }
         ],
-        "text": "What's the weather in Berlin at the moment?"
+        "text": "What's the weather in San Francisco at the moment?"
       },
       {
         "intent": "greet",

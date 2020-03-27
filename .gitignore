@@ -106,7 +106,6 @@ venv/*
 ENV/
 env.bak/
 venv.bak/
-venv
 
 # Spyder project settings
 .spyderproject
@@ -128,3 +127,12 @@ dmypy.json
 
 .idea/*
 
+# Rasa
+events.db
+events.db-shm
+events.db-wal
+rasa.db
+rasa_core.log
+story_graph.dot
+models/nlu/default/weathernlu/component*
+results/*

@@ -1,29 +1,29 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- inform
+- Goodbye
+entities:
+- location
 slots:
   location:
     type: text
-
-
-intents:
- - greet
- - goodbye
- - inform
-
-
-entities:
- - location
-
-templates:
+responses:
   utter_greet:
-    - text: 'Hello! How can I help?'
+  - text: Hello! How can I help?
   utter_goodbye:
-    - text: 'Talk to you later.'
-    - text: 'Bye bye :('
+  - text: Talk to you later.
+  - text: Bye bye :(
   utter_ask_location:
-    - text: 'In what location?'
-
-
+  - text: In what location?
+  utter_again:
+  - text: In what location?
 actions:
- - utter_greet
- - utter_goodbye
- - utter_ask_location
- - action_weather
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- action_weather
+- utter_again
