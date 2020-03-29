@@ -12,8 +12,8 @@
         "entities": []
       },
       {
-        "text": "Salutations",
-        "intent": "greet",
+        "text": "bye",
+        "intent": "Goodbye",
         "entities": []
       },
       {
@@ -202,6 +202,30 @@
             "start": 0,
             "end": 9,
             "value": "Lithuania",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Italy",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Livermore",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Italy",
             "entity": "location"
           }
         ]

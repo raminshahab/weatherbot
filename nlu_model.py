@@ -16,9 +16,10 @@ def train_nlu(data, config_file, model_dir):
 
 
 def run_nlu():
-    interpreter = Interpreter.load('./models/nlu/default/weathernlu', RasaNLUModelConfig('config_spacy.json'))
-    print(interpreter.parse(u"I am planning a vacation to San Francisco. I wonder what the weather is there?"))
+    interpreter = Interpreter.load('./models/nlu/default/weathernlu')
+    # print(interpreter.parse(u"I am planning a vacation to San Francisco. I wonder what the weather is there?"))
 
 
 if __name__ == '__main__':
-    train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')
+    # train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')
+    run_nlu()

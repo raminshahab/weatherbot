@@ -20,8 +20,7 @@ $ pip3 install -r requirements
 ```
 
 Now you've installed the Rasa Framework and Spacy language 
-model library using the med sized model and give the better 
-intent classification versus the lighter small library 
+model library you can import the module as so -- import spacey('en')
 
 Steps when creating and training your AI assistant 
 ```bash
@@ -33,10 +32,10 @@ Steps when creating and training your AI assistant
 6. Talk to Your Assistant
 ```
 
-``bash
+```bash
 # Start Actions Server 
 python -m rasa_sdk.endpoint --actions actions
-``
+```
 
 # Install Interactive NLU Trainer & launch trainer 
 ```bash

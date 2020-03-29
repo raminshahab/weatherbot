@@ -88,3 +88,60 @@
    - action_weather
 * goodbye
    - utter_goodbye
+
+## interactive_story_1
+* inform
+* inform
+* inform{"location": "san francisco"}
+    - slot{"location": "san francisco"}
+* inform{"location": "livermore"}
+    - slot{"location": "livermore"}
+* search_windspeed
+* confirm
+    - utter_goodbye
+* goodbye
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* inform{"location": "san francisco"}
+    - slot{"location": "san francisco"}
+    - action_weather
+    - slot{"location": "san francisco"}
+* goodbye
+    - utter_goodbye
+* inform
+    - utter_greet
+* inform{"location": "livermore"}
+    - slot{"location": "livermore"}
+    - action_weather
+    - slot{"location": "livermore"}
+* confirm
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* inform
+    - utter_ask_location
+* inform{"location": "italy"}
+    - slot{"location": "italy"}
+    - action_weather
+    - slot{"location": "italy"}
+* inform
+    - utter_confirm
+
+## interactive_story_1
+* greet
+    - utter_greet
+* inform
+    - utter_ask_location
+* inform{"location": "livermore"}
+    - slot{"location": "livermore"}
+    - action_weather
+    - slot{"location": "livermore"}
+* inform
+    - utter_confirm
+* goodbye
+    - utter_goodbye

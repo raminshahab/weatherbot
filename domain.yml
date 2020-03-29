@@ -1,29 +1,56 @@
-session_config:
-  session_expiration_time: 0
-  carry_over_slots_to_new_session: true
-intents:
-- greet
-- goodbye
-- inform
-- Goodbye
+actions:
+- action_weather
+- utter_again
+- utter_ask_location
+- utter_ask_name
+- utter_confirm
+- utter_default
+- utter_gesture
+- utter_goodbye
+- utter_greet
 entities:
 - location
+- name
+intents:
+- goodbye
+- greet
+- inform
+- confirm
+- search_windspeed
+- Goodbye
+responses:
+  utter_again:
+  - text: In what location?
+  - text: City name please?
+  utter_ask_location:
+  - text: In what location?
+  - text: Can you provide me with a city name?
+  utter_ask_name:
+  - text: Who am I talking to?
+  - text: What is your name?
+  utter_confirm:
+  - text: Yes
+  - text: Do you need some more help?
+  utter_default:
+  - text: I didn't catch that, once again.
+  - text: I'm sorry, I don't understand.
+  - text: Sorry, not sure what you're asking.
+  utter_gesture:
+  - text: You're welcome!.
+  - text: My pleasure.
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Thanks, Goodbye!
+  - text: Happy to help! See yah!
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: Hi there, what can I assist with?
+  - text: Greetings, what may I help you with?
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0
 slots:
   location:
     type: text
-responses:
-  utter_greet:
-  - text: Hello! How can I help?
-  utter_goodbye:
-  - text: Talk to you later.
-  - text: Bye bye :(
-  utter_ask_location:
-  - text: In what location?
-  utter_again:
-  - text: In what location?
-actions:
-- utter_greet
-- utter_goodbye
-- utter_ask_location
-- action_weather
-- utter_again
+  name:
+    type: text
