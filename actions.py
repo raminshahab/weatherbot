@@ -11,7 +11,7 @@ class ActionWeather(Action):
     """
     Weather stack API Config's
     """
-    API_KEY = "4375fd6915057370afea8398ddc7f7c2"
+    API_KEY = "ADD_YOUR_API_KEY"
     PARAM = {'access_key': '', 'query': '', 'units': 'f'}
     URL = "http://api.weatherstack.com/current"
 
