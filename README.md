@@ -47,17 +47,17 @@ $ rasa run actions
 
 # Request Predictions from NLU Server 
 ```bash
-curl localhost:5005/model/parse -d '{"text":"hello"}'
+$ curl localhost:5005/model/parse -d '{"text":"hello"}'
 ```
 
 # Install Rasa NLU 
 ```bash
-pip3 install rasa_nlu
+$ pip3 install rasa_nlu
 ```
 
 # Install RASA X 
 ```bash
-pip install rasa-x --extra-index-url https://pypi.rasa.com/simpleras
+$ pip3 install rasa-x --extra-index-url https://pypi.rasa.com/simpleras
 ```
 
 # Steps when creating and training your AI assistant 

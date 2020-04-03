@@ -12,12 +12,12 @@ entities:
 - location
 - name
 intents:
-- goodbye
-- greet
 - inform
+- greet
+- goodbye
+- Goodbye
 - confirm
 - search_windspeed
-- Goodbye
 responses:
   utter_again:
   - text: In what location?

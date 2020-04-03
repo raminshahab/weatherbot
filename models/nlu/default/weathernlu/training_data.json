@@ -193,6 +193,30 @@
         "intent": "inform",
         "entities": [
           {
+            "start": 0,
+            "end": 9,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ],
+        "text": "Italy"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Livermore",
+            "entity": "location"
+          }
+        ],
+        "text": "Livermore"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
             "start": 14,
             "end": 19,
             "value": "Italy",
