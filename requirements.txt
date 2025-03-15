@@ -1,5 +1,5 @@
-rasa==1.8.2
-requests==2.32.2
-spacy==2.2.2
-pyqt5==5.12.0
-pyqtwebengine==5.12
+rasa==3.6.17  
+requests==2.32.2 
+spacy==3.7.2  
+pyqt5==5.15.10 
+pyqtwebengine==5.15.10
