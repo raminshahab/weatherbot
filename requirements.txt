@@ -1,4 +1,4 @@
-rasa==3.6.17  
+rasa>=3.6.21 
 requests==2.32.2 
 spacy==3.7.2  
 pyqt5==5.15.10 
